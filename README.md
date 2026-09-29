@@ -10,6 +10,17 @@ Mỗi app một thư mục. `assets/site.css` giữ toàn bộ layout; mỗi tra
 |---|---|---|
 | Fruitette | Support URL | `https://khang-nguyen265.github.io/support/fruitette/` |
 | Fruitette | Privacy Policy URL (App Information) | `https://khang-nguyen265.github.io/support/fruitette/privacy.html` |
+| Paper Worlds | Support URL | `https://khang-nguyen265.github.io/support/paper/` |
+| Paper Worlds | Privacy Policy URL (App Information) | `https://khang-nguyen265.github.io/support/paper/privacy.html` |
+
+Paper Worlds dùng Apple Standard EULA đã được link trong Shop; hiện không cần trang Terms of Use riêng. Build app cần `--dart-define=PAPER_PRIVACY_URL=https://khang-nguyen265.github.io/support/paper/privacy.html` để nút Privacy Policy trong Shop hoạt động. Kiểm tra URL đã publish và nội dung App Privacy trong App Store Connect trước khi submit; Paper Worlds có Firebase Analytics và RevenueCat nên không khai “Data Not Collected”.
+
+Trước khi submit Paper Worlds:
+
+- Mở cả Support URL và Privacy Policy URL công khai trên điện thoại sau khi GitHub Pages deploy.
+- Khai App Privacy theo Firebase Analytics và RevenueCat của **bản release thực tế**; kiểm tra bản iOS được build theo cấu hình Firebase không có IDFA như ghi trong repo `paper`, file `lib/main.dart`.
+- Build với `PAPER_PRIVACY_URL` ở trên và xác minh nút Privacy Policy trong Shop mở trang thật. Privacy link cũng cần dễ tìm trong app theo App Review Guidelines.
+- Không nhầm Restore purchases với khôi phục postcard: postcard và progress lưu cục bộ, còn quyền mua do store và RevenueCat quản lý.
 
 ## Deploy lần đầu
 
