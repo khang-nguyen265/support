@@ -12,6 +12,9 @@ Mỗi app một thư mục. `assets/site.css` giữ toàn bộ layout; mỗi tra
 | Fruitette | Privacy Policy URL (App Information) | `https://khang-nguyen265.github.io/support/fruitette/privacy.html` |
 | Paper Worlds | Support URL | `https://khang-nguyen265.github.io/support/paper/` |
 | Paper Worlds | Privacy Policy URL (App Information) | `https://khang-nguyen265.github.io/support/paper/privacy.html` |
+| TOEIC Mnemonic | Support URL | `https://khang-nguyen265.github.io/support/toeic-mnemonic/` |
+| TOEIC Mnemonic | Privacy Policy URL (App Privacy) | `https://khang-nguyen265.github.io/support/toeic-mnemonic/privacy.html` |
+| TOEIC Mnemonic | Terms page (links Apple Standard EULA) | `https://khang-nguyen265.github.io/support/toeic-mnemonic/terms.html` |
 
 Paper Worlds dùng Apple Standard EULA đã được link trong Shop; hiện không cần trang Terms of Use riêng. Build app cần `--dart-define=PAPER_PRIVACY_URL=https://khang-nguyen265.github.io/support/paper/privacy.html` để nút Privacy Policy trong Shop hoạt động. Kiểm tra URL đã publish và nội dung App Privacy trong App Store Connect trước khi submit; Paper Worlds có Firebase Analytics và RevenueCat nên không khai “Data Not Collected”.
 
@@ -62,3 +65,10 @@ Không bao giờ viết một policy dùng chung mô tả "các app của chúng
 `inhale-site`, `still-site`, `pinly-site` là các repo riêng có từ trước và **vẫn đang chạy** — không đụng tới. Muốn gộp chúng vào đây thì phải sửa URL trong ASC của từng app; đó là việc riêng, không phải việc của repo này.
 
 Ba site cũ dùng `khang.d.d.nguyen@gmail.com`. Fruitette dùng `khang.plant@gmail.com`.
+
+## TOEIC Mnemonic release check
+
+- The app's paywall and Settings link to the TOEIC Mnemonic privacy and terms pages. The terms page points to Apple's Standard EULA; do not select a custom EULA in App Store Connect unless that choice changes.
+- Publish this repository before using the URLs in App Store Connect. Open all three public pages and test the paywall and Settings links in a release build.
+- App Privacy answers must include the actual Apple/RevenueCat purchase data practices. The app currently has no analytics SDK; recheck the final build before publishing the privacy declaration.
+- Learning progress is local; Restore purchases recovers paid access, not learning progress.
