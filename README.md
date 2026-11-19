@@ -12,9 +12,9 @@ Mỗi app một thư mục. `assets/site.css` giữ toàn bộ layout; mỗi tra
 | Fruitette | Privacy Policy URL (App Information) | `https://khang-nguyen265.github.io/support/fruitette/privacy.html` |
 | Paper Worlds | Support URL | `https://khang-nguyen265.github.io/support/paper/` |
 | Paper Worlds | Privacy Policy URL (App Information) | `https://khang-nguyen265.github.io/support/paper/privacy.html` |
-| TOEIC Mnemonic | Support URL | `https://khang-nguyen265.github.io/support/toeic-mnemonic/` |
-| TOEIC Mnemonic | Privacy Policy URL (App Privacy) | `https://khang-nguyen265.github.io/support/toeic-mnemonic/privacy.html` |
-| TOEIC Mnemonic | Terms page (links Apple Standard EULA) | `https://khang-nguyen265.github.io/support/toeic-mnemonic/terms.html` |
+| Memo990 | Support URL | `https://khang-nguyen265.github.io/support/memo990/` |
+| Memo990 | Privacy Policy URL (App Privacy) | `https://khang-nguyen265.github.io/support/memo990/privacy.html` |
+| Memo990 | Terms page (links Apple Standard EULA) | `https://khang-nguyen265.github.io/support/memo990/terms.html` |
 
 | Life Countdown | Support URL | `https://khang-nguyen265.github.io/support/life-countdown/` |
 | Life Countdown | Privacy Policy URL (App Information) | `https://khang-nguyen265.github.io/support/life-countdown/privacy.html` |
@@ -69,9 +69,9 @@ Không bao giờ viết một policy dùng chung mô tả "các app của chúng
 
 Ba site cũ dùng `khang.d.d.nguyen@gmail.com`. Fruitette dùng `khang.plant@gmail.com`.
 
-## TOEIC Mnemonic release check
+## Memo990 release check
 
-- The app's paywall and Settings link to the TOEIC Mnemonic privacy and terms pages. The terms page points to Apple's Standard EULA; do not select a custom EULA in App Store Connect unless that choice changes.
+- The app's paywall and Settings link to the Memo990 privacy and terms pages. The terms page points to Apple's Standard EULA; do not select a custom EULA in App Store Connect unless that choice changes.
 - Publish this repository before using the URLs in App Store Connect. Open all three public pages and test the paywall and Settings links in a release build.
 - App Privacy answers must include the actual Apple/RevenueCat purchase data practices. The app currently has no analytics SDK; recheck the final build before publishing the privacy declaration.
 - Learning progress is local; Restore purchases recovers paid access, not learning progress.
